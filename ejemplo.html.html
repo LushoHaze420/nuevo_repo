@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+    <form action="insertar_hotel.php" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label>ubicacion:</label>
+        <input type="text" name="ubicacion" required>
+        <label>Habitaciones disponibles:</label>
+        <input type="number" name="habitaciones_disponibles" required>
+        <label>Tarifa noche:</label>
+        <input type="number"  name="tarifa_noche" required>
+        <button type="submit">Insertar Hotel</button>
+    </form>
+</body>
+</html>
